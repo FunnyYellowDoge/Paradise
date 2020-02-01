@@ -81,22 +81,13 @@
 		. += "<span class='notice'>It is too far away.</span>"
 
 /obj/item/photo/proc/show(mob/user as mob)
-	var/icon/img_shown = new/icon(img)
-	var/colormatrix = user.get_screen_colour()
-	// Apply colorblindness effects, if any.
-	if(islist(colormatrix))
-		img_shown.MapColors(
-			colormatrix[1], colormatrix[2], colormatrix[3],
-			colormatrix[4], colormatrix[5], colormatrix[6],
-			colormatrix[7], colormatrix[8], colormatrix[9],
-		)
-	usr << browse_rsc(img_shown, "tmp_photo.png")
+	usr << browse_rsc(img, "tmp_photo.png")
 	usr << browse("<html><head><title>[name]</title></head>" \
 		+ "<body style='overflow:hidden;margin:0;text-align:center'>" \
 		+ "<img src='tmp_photo.png' width='[64*photo_size]' style='-ms-interpolation-mode:nearest-neighbor' />" \
 		+ "[scribble ? "<br>Written on the back:<br><i>[scribble]</i>" : ""]"\
-		+ "</body></html>", "window=Photo[UID()];size=[64*photo_size]x[scribble ? 400 : 64*photo_size]")
-	onclose(usr, "Photo[UID()]")
+		+ "</body></html>", "window=book;size=[64*photo_size]x[scribble ? 400 : 64*photo_size]")
+	onclose(usr, "[name]")
 	return
 
 /obj/item/photo/verb/rename()
@@ -179,7 +170,7 @@
 		qdel(C)
 
 
-GLOBAL_LIST_INIT(SpookyGhosts, list("ghost","shade","shade2","ghost-narsie","horror","shadow","ghostian2"))
+var/list/SpookyGhosts = list("ghost","shade","shade2","ghost-narsie","horror","shadow","ghostian2")
 
 /obj/item/camera/spooky
 	name = "camera obscura"
@@ -239,8 +230,8 @@ GLOBAL_LIST_INIT(SpookyGhosts, list("ghost","shade","shade2","ghost-narsie","hor
 					var/mob/dead/observer/O = A
 					if(O.following)
 						continue
-					if(user.mind && !(user.mind.assigned_role == "Capellan"))
-						atoms.Add(image('icons/mob/mob.dmi', O.loc, pick(GLOB.SpookyGhosts), 4, SOUTH))
+					if(user.mind && !(user.mind.assigned_role == "Chaplain"))
+						atoms.Add(image('icons/mob/mob.dmi', O.loc, pick(SpookyGhosts), 4, SOUTH))
 					else
 						atoms.Add(image('icons/mob/mob.dmi', O.loc, "ghost", 4, SOUTH))
 				else//its not a ghost
@@ -265,7 +256,7 @@ GLOBAL_LIST_INIT(SpookyGhosts, list("ghost","shade","shade2","ghost-narsie","hor
 		var/atom/A = sorted[i]
 		if(A)
 			var/icon/img = getFlatIcon(A)//build_composite_icon(A)
-			if(istype(A, /obj/item/areaeditor/blueprints))
+			if(istype(A, /obj/item/areaeditor/blueprints/ce))
 				blueprints = 1
 
 			// If what we got back is actually a picture, draw it.
@@ -336,7 +327,7 @@ GLOBAL_LIST_INIT(SpookyGhosts, list("ghost","shade","shade2","ghost-narsie","hor
 	icon_state = icon_off
 	on = 0
 	if(istype(src,/obj/item/camera/spooky))
-		if(user.mind && user.mind.assigned_role == "Capellan" && see_ghosts)
+		if(user.mind && user.mind.assigned_role == "Chaplain" && see_ghosts)
 			if(prob(24))
 				handle_haunt(user)
 	spawn(64)
@@ -544,7 +535,7 @@ GLOBAL_LIST_INIT(SpookyGhosts, list("ghost","shade","shade2","ghost-narsie","hor
 		src.icon_state = icon_on
 		camera = new /obj/machinery/camera(src)
 		camera.network = list("news")
-		GLOB.cameranet.removeCamera(camera)
+		cameranet.removeCamera(camera)
 		camera.c_tag = user.name
 	to_chat(user, "You switch the camera [on ? "on" : "off"].")
 
