@@ -265,7 +265,7 @@ GLOBAL_LIST_INIT(SpookyGhosts, list("ghost","shade","shade2","ghost-narsie","hor
 		var/atom/A = sorted[i]
 		if(A)
 			var/icon/img = getFlatIcon(A)//build_composite_icon(A)
-			if(istype(A, /obj/item/areaeditor/blueprints))
+			if(istype(A, /obj/item/areaeditor/blueprints/ce))
 				blueprints = 1
 
 			// If what we got back is actually a picture, draw it.
@@ -544,7 +544,7 @@ GLOBAL_LIST_INIT(SpookyGhosts, list("ghost","shade","shade2","ghost-narsie","hor
 		src.icon_state = icon_on
 		camera = new /obj/machinery/camera(src)
 		camera.network = list("news")
-		GLOB.cameranet.removeCamera(camera)
+		cameranet.removeCamera(camera)
 		camera.c_tag = user.name
 	to_chat(user, "You switch the camera [on ? "on" : "off"].")
 
