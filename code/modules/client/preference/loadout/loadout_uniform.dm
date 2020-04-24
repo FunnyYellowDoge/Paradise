@@ -223,3 +223,7 @@
 	display_name = "pants, camo"
 	path = /obj/item/clothing/under/pants/camo
 
+/datum/gear/uniform/pants/pinkhawaiianshirt
+	display_name = "Hawaiian, shirt"
+	path = /obj/item/clothing/under/pinkhawaiianshirt
+
