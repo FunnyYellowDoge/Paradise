@@ -1450,6 +1450,7 @@
 #include "code\modules\crafting\tailoring.dm"
 #include "code\modules\customitems\item_defines.dm"
 #include "code\modules\customitems\item_spawning.dm"
+#include "code\modules\customitems\manaos_custom.dm"
 #include "code\modules\detective_work\detective_work.dm"
 #include "code\modules\detective_work\evidence.dm"
 #include "code\modules\detective_work\footprints_and_rag.dm"
