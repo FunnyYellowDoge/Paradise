@@ -51,7 +51,7 @@
 
 /obj/item/reagent_containers/food/snacks/friedbanana
 	name = "banana frita"
-	desc = "Goreng Pisang, también conocido como banana frita."
+	desc = "Goreng Pisang, tambien conocido como banana frita."
 	icon_state = "friedbanana"
 	list_reagents = list("sugar" = 5, "nutriment" = 8, "cornoil" = 4)
 
