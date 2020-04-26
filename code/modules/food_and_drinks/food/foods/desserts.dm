@@ -76,7 +76,7 @@
 
 /obj/item/reagent_containers/food/snacks/amanitajelly
 	name = "jalea de amanita"
-	desc = "Looks curiously toxic."
+	desc = "Curiosamente parece toxico."
 	icon_state = "amanitajelly"
 	trash = /obj/item/trash/snack_bowl
 	filling_color = "#ED0758"

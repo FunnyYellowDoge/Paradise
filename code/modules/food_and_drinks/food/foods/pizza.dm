@@ -238,7 +238,7 @@
 	if(istype(I, /obj/item/pen/))
 		if(open)
 			return
-		var/t = clean_input("Pon lo que quieres añadir al tag:", "Escribir", null)
+		var/t = clean_input("Pon lo que quieres añadir a la etiqueta:", "Escribir", null)
 		var/obj/item/pizzabox/boxtotagto = src
 		if(boxes.len > 0)
 			boxtotagto = boxes[boxes.len]
