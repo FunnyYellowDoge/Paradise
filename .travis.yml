@@ -16,7 +16,6 @@ jobs:
             - python3-setuptools
       install:
         - tools/travis/install_build_deps.sh
-        - cargo build -p dreamchecker
         - tools/travis/install_dreamchecker.sh
       script:
         - shopt -s globstar
