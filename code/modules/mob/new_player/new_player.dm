@@ -413,7 +413,7 @@
 					if(character.mind.role_alt_title)
 						rank = character.mind.role_alt_title
 					GLOB.global_announcer.autosay("[character.real_name],[rank ? " [rank]," : " visitor," ] [join_message ? join_message : "ha arribado a la estacion"].", "Computadora de Anuncios de Llegadas")
-
+					call(/mob/new_player/proc/start_player)(character)
 /mob/new_player/proc/AddEmploymentContract(mob/living/carbon/human/employee)
 	spawn(30)
 		for(var/C in GLOB.employmentCabinets)
