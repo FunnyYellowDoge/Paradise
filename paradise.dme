@@ -869,7 +869,6 @@
 #include "code\game\objects\items\shooting_range.dm"
 #include "code\game\objects\items\toys.dm"
 #include "code\game\objects\items\trash.dm"
-#include "code\game\objects\items\uno.dm"
 #include "code\game\objects\items\devices\aicard.dm"
 #include "code\game\objects\items\devices\autopsy.dm"
 #include "code\game\objects\items\devices\camera_bug.dm"
