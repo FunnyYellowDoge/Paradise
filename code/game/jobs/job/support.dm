@@ -381,7 +381,7 @@
 	selection_color = "#dddddd"
 	access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_JANITOR, ACCESS_MAINT_TUNNELS)
-	alt_titles = list("Custodial Technician")
+	alt_titles = list("Custodial Technician","Maid")
 	outfit = /datum/outfit/job/janitor
 
 /datum/outfit/job/janitor
@@ -407,7 +407,7 @@
 	selection_color = "#dddddd"
 	access = list(ACCESS_LIBRARY, ACCESS_MAINT_TUNNELS)
 	minimal_access = list(ACCESS_LIBRARY, ACCESS_MAINT_TUNNELS)
-	alt_titles = list("Journalist")
+	alt_titles = list("Periodista")
 	outfit = /datum/outfit/job/librarian
 
 /datum/outfit/job/librarian
