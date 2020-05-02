@@ -4,7 +4,7 @@ os: linux
 
 git:
   depth: 1
-  
+
 matrix:
   include:
     - name: "Run Linters"
