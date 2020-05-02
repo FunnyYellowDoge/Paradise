@@ -33,8 +33,7 @@ SUBSYSTEM_DEF(ticker)
 	var/triai = 0//Global holder for Triumvirate
 	var/initialtpass = 0 //holder for inital autotransfer vote timer
 	var/obj/screen/cinematic = null			//used for station explosion cinematic
-	var/round_end_announced = 0 // Spam Prevention. Announce round end only once.
-	var/ticker_going = TRUE // This used to be in the unused globals, but it turns out its actually used in a load of places. Its now a ticker var because its related to round stuff, -aa
+	var/round_end_announced = 0 // Spam Prevention. Announce round end only once.\
 
 /datum/controller/subsystem/ticker/Initialize()
 	login_music = pick(\
