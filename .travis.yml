@@ -25,7 +25,7 @@ matrix:
         - chmod +x tools/travis/check_grep.sh
         - tools/travis/check_changelogs.sh
         - python3 tools/travis/check_line_endings.py
-        - ~/dreamchecker
+        - ~../dreamchecker
 
     - name: "Compile All Maps"
       addons:
