@@ -5,9 +5,6 @@ os: linux
 git:
   depth: 1
   
-before_install:
-  - chmod +x install_build_deps.sh
-  
 matrix:
   include:
     - name: "Run Linters"
@@ -18,8 +15,8 @@ matrix:
             - python3-pip
             - python3-setuptools
       install:
-        - tools/travis/install_build_deps.sh
-        - tools/travis/install_dreamchecker.sh
+        - chmod +x tools/travis/install_build_deps.sh
+        - chmod +x tools/travis/install_dreamchecker.sh
       script:
         - shopt -s globstar
         - find . -name "*.php" -print0 | xargs -0 -n1 php -l
