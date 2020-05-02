@@ -35,7 +35,7 @@ matrix:
         directories:
           - $HOME/BYOND
       install:
-        - tools/travis/install_byond.sh
-        - source $HOME/BYOND/byond/bin/byondsetup
+        - chmod +x tools/travis/install_byond.sh
+        - chmod +x source $HOME/BYOND/byond/bin/byondsetup
       script:
-        - tools/travis/dm.sh -Mtravis_map_testing paradise.dme
+        - chmod +x tools/travis/dm.sh -Mtravis_map_testing paradise.dme
