@@ -4,7 +4,10 @@ os: linux
 
 git:
   depth: 1
-
+  
+before_install:
+  - chmod +x install_build_deps.sh
+  
 matrix:
   include:
     - name: "Run Linters"
