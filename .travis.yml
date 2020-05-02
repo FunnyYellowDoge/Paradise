@@ -38,4 +38,4 @@ matrix:
         - chmod +x tools/travis/install_byond.sh
         - source $HOME/BYOND/byond/bin/byondsetup
       script:
-        - chmod +x tools/travis/dm.sh -Mtravis_map_testing paradise.dme
+        - tools/travis/dm.sh -Mtravis_map_testing paradise.dme
