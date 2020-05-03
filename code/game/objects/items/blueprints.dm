@@ -329,7 +329,3 @@
 	fluffnotice = "Intellectual Property of Nanotrasen. For use in engineering cyborgs only. Wipe from memory upon departure from the station."
 
 /obj/item/areaeditor/blueprints/ce
-	name = "station blueprints"
-	desc = "Blueprints of the station. There is a \"Classified\" stamp and several coffee stains on it."
-	icon_state = "blueprints"
-	fluffnotice = "Property of Nanotrasen. For heads of staff only. Store in high-secure storage."
