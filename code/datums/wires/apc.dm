@@ -2,11 +2,6 @@
 	holder_type = /obj/machinery/power/apc
 	wire_count = 4
 
-#define APC_WIRE_IDSCAN 1
-#define APC_WIRE_MAIN_POWER1 2
-#define APC_WIRE_MAIN_POWER2 4
-#define APC_WIRE_AI_CONTROL 8
-
 /datum/wires/apc/GetWireName(index)
 	switch(index)
 		if(APC_WIRE_IDSCAN)
