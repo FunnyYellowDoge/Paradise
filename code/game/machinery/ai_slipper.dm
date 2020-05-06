@@ -85,7 +85,7 @@
 		return
 
 	if(get_dist(src, user) > 1 && (!issilicon(user) && !user.can_admin_interact()))
-		to_chat(user, "<span class='warning'>Too far away.</span>")
+		to_chat(user, "<span class='warning'>Estas demasiado lejos.</span>")
 		user.unset_machine()
 		user << browse(null, "window=ai_slipper")
 		return
@@ -108,7 +108,7 @@
 		return 1
 
 	if(locked && (!issilicon(usr) && !usr.can_admin_interact()))
-		to_chat(usr, "Control panel is locked!")
+		to_chat(usr, "El panel de control está cerrado")
 		return 1
 
 	if(href_list["toggleOn"])

@@ -24,7 +24,7 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 /obj/machinery/clonepod
 	anchored = 1
 	name = "cloning pod"
-	desc = "An electronically-lockable pod for growing organic tissue."
+	desc = "Una capsula con una cerradura electronica para el crecimiento de tejido organico."
 	density = 1
 	icon = 'icons/obj/cloning.dmi'
 	icon_state = "pod_0"
@@ -299,13 +299,13 @@ GLOBAL_LIST_INIT(cloner_biomass_items, list(\
 		clonemind.transfer_to(H)
 		H.ckey = R.ckey
 		update_clone_antag(H) //Since the body's got the mind, update their antag stuff right now. Otherwise, wait until they get kicked out (as per the CLONER_MATURE_CLONE business) to do it.
-		to_chat(H, {"<span class='notice'><b>Consciousness slowly creeps over you
-			as your body regenerates.</b><br><i>So this is what cloning
-			feels like?</i></span>"})
+		to_chat(H, {"<span class='notice'><b>La conciencia se arrastra lentamente sobre ti
+			a medida que tu cuerpo se regenera.</b><br><i>Entonces asi es como
+			se siente ser clonado?</i></span>"})
 	else if(grab_ghost_when == CLONER_MATURE_CLONE)
-		to_chat(clonemind.current, {"<span class='notice'>Your body is
-			beginning to regenerate in a cloning pod. You will
-			become conscious when it is complete.</span>"})
+		to_chat(clonemind.current, {"<span class='notice'>Tu cuerpo esta
+			comenzando a regenerarse en la capsula de clonacion. Vas tomando
+			conciencia cuando esto se completa</span>"})
 		// Set up a soul link with the dead body to catch a revival
 		soullink(/datum/soullink/soulhook, clonemind.current, src)
 

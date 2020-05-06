@@ -46,19 +46,19 @@
 	if(istype(I, /obj/item/grab))
 		var/obj/item/grab/TYPECAST_YOUR_SHIT = I
 		if(panel_open)
-			to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
+			to_chat(user, "<span class='notice'>Primero cierra el panel de mantenimiento.</span>")
 			return
 		if(!ishuman(TYPECAST_YOUR_SHIT.affecting))
 			return
 		if(occupant)
-			to_chat(user, "<span class='notice'>The scanner is already occupied!</span>")
+			to_chat(user, "<span class='notice'>El escaner esta ocupado!</span>")
 			return
 		if(TYPECAST_YOUR_SHIT.affecting.has_buckled_mobs()) //mob attached to us
-			to_chat(user, "<span class='warning'>[TYPECAST_YOUR_SHIT.affecting] will not fit into [src] because [TYPECAST_YOUR_SHIT.affecting.p_they()] [TYPECAST_YOUR_SHIT.affecting.p_have()] a fucking slime latched onto [TYPECAST_YOUR_SHIT.affecting.p_their()] head.</span>")
+			to_chat(user, "<span class='warning'>[TYPECAST_YOUR_SHIT.affecting] no cabe en el [src] porque [TYPECAST_YOUR_SHIT.affecting.p_they()] [TYPECAST_YOUR_SHIT.affecting.p_have()] un puto slime esta enganchado en [TYPECAST_YOUR_SHIT.affecting.p_their()] head.</span>")
 			return
 		var/mob/living/carbon/human/M = TYPECAST_YOUR_SHIT.affecting
 		if(M.abiotic())
-			to_chat(user, "<span class='notice'>Subject cannot have abiotic items on.</span>")
+			to_chat(user, "<span class='notice'>El sujeto no puede tener objetos no biologicos</span>")
 			return
 		M.forceMove(src)
 		occupant = M
@@ -82,10 +82,10 @@
 	if(!I.use_tool(src, user, 0, volume = I.tool_volume))
 		return
 	if(occupant)
-		to_chat(user, "<span class='notice'>The scanner is occupied.</span>")
+		to_chat(user, "<span class='notice'>El escaner esta ocupado.</span>")
 		return
 	if(panel_open)
-		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
+		to_chat(user, "<span class='notice'>Primero cierra el panel de mantenimiento.</span>")
 		return
 	if(dir == EAST)
 		setDir(WEST)
@@ -104,24 +104,24 @@
 	if(!ishuman(user) && !isrobot(user))
 		return FALSE //not a borg or human
 	if(panel_open)
-		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
+		to_chat(user, "<span class='notice'>Primero cierra el panel de mantenimiento.</span>")
 		return FALSE //panel open
 	if(occupant)
-		to_chat(user, "<span class='notice'>[src] is already occupied.</span>")
+		to_chat(user, "<span class='notice'>[src] esta ocupado.</span>")
 		return FALSE //occupied
 	if(H.buckled)
 		return FALSE
 	if(H.abiotic())
-		to_chat(user, "<span class='notice'>Subject cannot have abiotic items on.</span>")
+		to_chat(user, "<span class='notice'>El sujeto no puede tener objetos no biologicos.</span>")
 		return FALSE
 	if(H.has_buckled_mobs()) //mob attached to us
-		to_chat(user, "<span class='warning'>[H] will not fit into [src] because [H.p_they()] [H.p_have()] a slime latched onto [H.p_their()] head.</span>")
+		to_chat(user, "<span class='warning'>[H] no cabe en [src] porque [H.p_they()] [H.p_have()] un slime esta enganchado en [H.p_their()] head.</span>")
 		return
 
 	if(H == user)
-		visible_message("[user] climbs into [src].")
+		visible_message("[user] se sube al [src].")
 	else
-		visible_message("[user] puts [H] into the body scanner.")
+		visible_message("[user] coloca [H] dentro del escaner")
 
 	H.forceMove(src)
 	occupant = H
@@ -142,7 +142,7 @@
 		return // you cant reach that
 
 	if(panel_open)
-		to_chat(user, "<span class='notice'>Close the maintenance panel first.</span>")
+		to_chat(user, "<span class='notice'>Primero cierra el panel de mantenimiento.</span>")
 		return
 
 	ui_interact(user)
@@ -329,7 +329,7 @@
 		eject()
 
 	if(href_list["print_p"])
-		visible_message("<span class='notice'>[src] rattles and prints out a sheet of paper.</span>")
+		visible_message("<span class='notice'>[src] teclea e imprime una hoja de papel</span>")
 		var/obj/item/paper/P = new /obj/item/paper(loc)
 		playsound(loc, 'sound/goonstation/machines/printer_dotmatrix.ogg', 50, 1)
 		P.info = "<CENTER><B>Body Scan - [href_list["name"]]</B></CENTER><BR>"
