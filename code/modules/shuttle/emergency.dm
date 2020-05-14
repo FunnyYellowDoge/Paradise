@@ -148,7 +148,7 @@
 	else
 		SSshuttle.emergencyLastCallLoc = null
 
-	emergency_shuttle_called.Announce("La shuttle de emergencia ha sido solicitada. [redAlert ? "Alerta roja confirmada: Despachando shuttle prioritaria. " : "" ]Arribara en [timeLeft(600)] minutos.[reason][SSshuttle.emergencyLastCallLoc ? "\n\nSeñal de llamada rastreada. Los resultados se pueden ver en cualquier consola de comunicaciones." : "" ]")
+	emergency_shuttle_called.Announce("La shuttle de emergencia ha sido solicitada. [redAlert ? "Alerta roja confirmada: Despachando shuttle prioritaria. " : "" ]Arribara en [timeLeft(600)] minutos.[reason][SSshuttle.emergencyLastCallLoc ? "\n\nSenal de llamada rastreada. Los resultados se pueden ver en cualquier consola de comunicaciones." : "" ]")
 
 	if(reason == "Automatic Crew Transfer" && signalOrigin == null) // Best way we have to check that it's actually a crew transfer and not just a player using the same message- any other calls to this proc should have a signalOrigin.
 		GLOB.atc.shift_ending()
