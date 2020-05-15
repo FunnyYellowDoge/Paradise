@@ -118074,9 +118074,6 @@
 	icon_state = "cmo"
 	},
 /area/medical/medbay2)
-"rBk" = (
-/turf/space,
-/area/security/prisonershuttle)
 "rCm" = (
 /obj/structure/table/wood,
 /obj/machinery/computer/med_data/laptop,
@@ -168707,7 +168704,7 @@ pbU
 bcS
 bet
 blR
-rBk
+aaa
 bsA
 bno
 bsB
