@@ -30283,7 +30283,6 @@
 /turf/simulated/shuttle/floor,
 /area/shuttle/mining)
 "bew" = (
-/obj/structure/table,
 /obj/machinery/computer/shuttle/mining,
 /turf/simulated/shuttle/floor,
 /area/shuttle/mining)
@@ -66018,7 +66017,9 @@
 	level = 1
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor,
+/turf/simulated/floor{
+	icon_state = "L1"
+	},
 /area/hallway/primary/central)
 "cnv" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -99888,6 +99889,9 @@
 "dwv" = (
 /obj/structure/table,
 /obj/item/clothing/gloves/color/latex,
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "blue"
@@ -100800,6 +100804,11 @@
 /obj/structure/table,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /obj/item/clothing/mask/breath,
+/obj/machinery/light/small{
+	tag = "icon-bulb1 (EAST)";
+	icon_state = "bulb1";
+	dir = 4
+	},
 /turf/simulated/floor/plating,
 /area/medical/morgue)
 "dxV" = (
@@ -101254,6 +101263,9 @@
 	dir = 8;
 	pixel_x = -24
 	},
+/obj/machinery/light/small{
+	dir = 8
+	},
 /turf/simulated/floor/plasteel{
 	dir = 8;
 	icon_state = "blue"
@@ -101325,6 +101337,11 @@
 	},
 /obj/structure/table,
 /obj/item/paper_bin,
+/obj/machinery/light/small{
+	tag = "icon-bulb1 (EAST)";
+	icon_state = "bulb1";
+	dir = 4
+	},
 /turf/simulated/floor/plasteel{
 	icon_state = "blue";
 	dir = 4
@@ -117421,6 +117438,11 @@
 /turf/simulated/wall,
 /area/clownoffice)
 "mOo" = (
+/obj/machinery/light/small{
+	tag = "icon-bulb1 (EAST)";
+	icon_state = "bulb1";
+	dir = 4
+	},
 /turf/simulated/floor/plasteel{
 	icon_state = "blue";
 	dir = 4
@@ -118235,6 +118257,26 @@
 /obj/effect/decal/cleanable/fungus,
 /turf/simulated/wall,
 /area/maintenance/port)
+"sJo" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/door/window/southleft{
+	name = "Medbay Desk";
+	req_access_txt = "5"
+	},
+/obj/effect/decal/warning_stripes/yellow,
+/obj/machinery/door/window/northleft,
+/obj/machinery/door_control{
+	id = "medbayfoyer";
+	name = "Medbay Front Doors";
+	normaldoorcontrol = 1;
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/simulated/floor/plasteel{
+	icon_state = "white"
+	},
+/area/medical/medbay)
 "sKD" = (
 /turf/simulated/floor/plasteel{
 	dir = 8;
@@ -118454,6 +118496,14 @@
 /turf/simulated/shuttle/floor4/vox,
 /area/shuttle/vox)
 "uqj" = (
+/obj/structure/rack,
+/obj/item/clothing/suit/fire/firefighter,
+/obj/item/tank/oxygen,
+/obj/item/clothing/mask/gas,
+/obj/item/extinguisher,
+/obj/item/clothing/head/hardhat/red,
+/obj/item/clothing/glasses/meson,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = -32
 	},
@@ -118579,9 +118629,6 @@
 	icon_state = "swallc2"
 	},
 /area/shuttle/trade/sol)
-"vvY" = (
-/turf/space,
-/area/space/nearstation)
 "vHm" = (
 /obj/effect/decal/warning_stripes/yellow/hollow,
 /obj/structure/cable{
@@ -118603,17 +118650,6 @@
 	dir = 1
 	},
 /area/medical/morgue)
-"vJN" = (
-/obj/structure/rack,
-/obj/item/clothing/suit/fire/firefighter,
-/obj/item/tank/oxygen,
-/obj/item/clothing/mask/gas,
-/obj/item/extinguisher,
-/obj/item/clothing/head/hardhat/red,
-/obj/item/clothing/glasses/meson,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/maintenance/engi_shuttle)
 "vNv" = (
 /obj/effect/spawner/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -136886,15 +136922,15 @@ izQ
 izQ
 izQ
 izQ
-izQ
-izQ
-izQ
-izQ
 qMe
 xvv
 xvv
 xvv
 xWk
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -137142,16 +137178,16 @@ hDC
 hDC
 mgS
 uqj
-vJN
-izQ
-nny
-nny
 izQ
 xix
 jQN
 jQN
 jQN
 xix
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -137398,17 +137434,17 @@ izQ
 hDC
 hDC
 mpi
-nny
 suy
 izQ
-nny
-nny
-htW
 xix
 tsq
 tsq
 tsq
 xix
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -137656,16 +137692,16 @@ pTS
 pTS
 nny
 nny
-nny
-eLs
-nny
-nny
 eLs
 pbA
 jGL
 jGL
 uvx
 xix
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -137913,16 +137949,16 @@ fxP
 nny
 nny
 nny
-nny
 htW
-htW
-htW
-cEz
 xix
 jGL
 tsq
 jGL
 xix
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -138170,16 +138206,16 @@ qlc
 nny
 nny
 nny
-nny
 htW
-abj
-abj
-vvY
 xix
 hwx
 klR
 vQG
 xix
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -138426,17 +138462,17 @@ izQ
 qlc
 nny
 gHh
-nny
 ssP
 htW
-abj
-aaa
-vvY
 lpK
 pgf
 qto
 hfV
 mph
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -162076,7 +162112,7 @@ cNT
 cPD
 cMp
 cSF
-cUd
+sJo
 cUn
 cXo
 cYL
