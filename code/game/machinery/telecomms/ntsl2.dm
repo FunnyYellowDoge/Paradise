@@ -70,7 +70,7 @@ GLOBAL_DATUM_INIT(nttc_config, /datum/nttc_configuration, new())
 		"Director de Ciencias" = "sciradio",
 		"Robotista" = "sciradio",
 		"Cientifico" = "sciradio",
-		"Xenoarcheologista" = "sciradio",
+		"Xenoarqueologista" = "sciradio",
 		"Xenobiologista" = "sciradio",
 		// Security
 		"Brig Physician" = "secradio",
