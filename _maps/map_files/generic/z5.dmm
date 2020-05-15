@@ -6200,7 +6200,7 @@
 /obj/docking_port/stationary{
 	dir = 8;
 	dwidth = 3;
-	height = 5;
+	height = 7;
 	id = "mining_asteroid";
 	name = "asteroid mine";
 	width = 7
@@ -46168,13 +46168,13 @@ lh
 mg
 aa
 aa
-aj
 aa
 aa
-aj
 aa
 aa
-aj
+aa
+aa
+aa
 pi
 aj
 pi
@@ -46425,13 +46425,13 @@ lU
 mn
 aj
 aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 pi
 aa
 pi

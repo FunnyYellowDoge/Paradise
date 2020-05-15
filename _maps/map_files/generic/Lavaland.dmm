@@ -2553,7 +2553,7 @@
 	area_type = /area/lavaland/surface/outdoors;
 	dir = 8;
 	dwidth = 3;
-	height = 5;
+	height = 7;
 	id = "mining_away";
 	name = "lavaland mine";
 	turf_type = /turf/simulated/floor/plating/asteroid/basalt/lava_land_surface;
@@ -16326,8 +16326,8 @@ aj
 aj
 aj
 ab
-aj
-aj
+ab
+ab
 aj
 aj
 aj
@@ -16580,13 +16580,13 @@ aj
 aj
 aj
 aj
-aj
-aj
 ab
-aj
 ab
-aj
-aj
+ab
+ab
+ab
+ab
+ab
 aj
 aj
 aj
@@ -16836,7 +16836,7 @@ aj
 aj
 aj
 aj
-aj
+ab
 ab
 ab
 ab
