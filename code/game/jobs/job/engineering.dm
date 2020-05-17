@@ -52,12 +52,12 @@
 	total_positions = 5
 	spawn_positions = 5
 	is_engineering = 1
-	supervisors = "the chief engineer"
+	supervisors = "el jefe de ingenieros"
 	department_head = list("Jefe de Ingenieros")
 	selection_color = "#fff5cc"
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_MECHANIC, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_MINERAL_STOREROOM)
-	alt_titles = list("Maintenance Technician","Engine Technician","Electrician")
+	alt_titles = list("Tecnico de Mantenimiento","Tecnico de Motor","Electricista")
 	outfit = /datum/outfit/job/engineer
 
 /datum/outfit/job/engineer
@@ -87,12 +87,12 @@
 	total_positions = 3
 	spawn_positions = 2
 	is_engineering = 1
-	supervisors = "el Jefe de Ingenieros"
+	supervisors = "el jefe de ingenieros"
 	department_head = list("Jefe de Ingenieros")
 	selection_color = "#fff5cc"
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MINERAL_STOREROOM)
 	minimal_access = list(ACCESS_EVA, ACCESS_ATMOSPHERICS, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_EMERGENCY_STORAGE, ACCESS_CONSTRUCTION, ACCESS_MINERAL_STOREROOM, ACCESS_TECH_STORAGE)
-	alt_titles = list("Atmospheric Technician")
+	alt_titles = list("Tecnico Atmosferico")
 	outfit = /datum/outfit/job/atmos
 
 /datum/outfit/job/atmos
@@ -118,7 +118,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	is_engineering = 1
-	supervisors = "el Jefe de Ingenieros"
+	supervisors = "el jefe de ingenieros"
 	department_head = list("Jefe de Ingenieros")
 	selection_color = "#fff5cc"
 	access = list(ACCESS_EVA, ACCESS_ENGINE, ACCESS_ENGINE_EQUIP, ACCESS_TECH_STORAGE, ACCESS_MECHANIC, ACCESS_MAINT_TUNNELS, ACCESS_EXTERNAL_AIRLOCKS, ACCESS_CONSTRUCTION, ACCESS_ATMOSPHERICS, ACCESS_MINERAL_STOREROOM)
