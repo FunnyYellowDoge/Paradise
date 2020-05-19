@@ -60514,13 +60514,6 @@
 	},
 /turf/simulated/shuttle/plating,
 /area/shuttle/supply)
-"ceX" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f6";
-	dir = 2
-	},
-/area/shuttle/mining)
 "ceY" = (
 /obj/structure/window/full/shuttle,
 /obj/structure/grille,
@@ -61465,23 +61458,17 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
-"cgB" = (
-/obj/structure/table,
-/turf/simulated/shuttle/floor,
-/area/shuttle/mining)
 "cgC" = (
 /obj/machinery/computer/shuttle/mining,
 /turf/simulated/shuttle/floor,
 /area/shuttle/mining)
 "cgD" = (
 /obj/structure/table,
-/obj/machinery/light/small{
-	dir = 1
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_x = 6;
-	pixel_y = -5
-	},
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/storage/pill_bottle/patch_pack,
+/obj/item/storage/pill_bottle/patch_pack,
+/obj/item/storage/pill_bottle/patch_pack,
 /turf/simulated/shuttle/floor,
 /area/shuttle/mining)
 "cgE" = (
@@ -63721,12 +63708,6 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
-"cki" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/shuttle/floor,
-/area/shuttle/mining)
 "ckj" = (
 /obj/structure/window/plasmareinforced{
 	color = "#FF0000";
@@ -63747,7 +63728,7 @@
 /obj/docking_port/mobile{
 	dir = 8;
 	dwidth = 3;
-	height = 5;
+	height = 7;
 	id = "mining";
 	name = "mining shuttle";
 	rebuildable = 1;
@@ -63756,7 +63737,7 @@
 /obj/docking_port/stationary{
 	dir = 8;
 	dwidth = 3;
-	height = 5;
+	height = 7;
 	id = "mining_home";
 	name = "mining shuttle bay";
 	width = 7
@@ -65400,6 +65381,7 @@
 /area/maintenance/apmaint)
 "cnh" = (
 /obj/structure/closet/crate,
+/obj/machinery/light,
 /turf/simulated/shuttle/floor,
 /area/shuttle/mining)
 "cni" = (
@@ -65414,13 +65396,6 @@
 	dir = 4
 	},
 /turf/simulated/shuttle/plating,
-/area/shuttle/mining)
-"cnj" = (
-/obj/structure/ore_box,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/shuttle/floor,
 /area/shuttle/mining)
 "cnk" = (
 /obj/structure/sign/securearea{
@@ -66368,13 +66343,6 @@
 "coN" = (
 /obj/structure/shuttle/engine/propulsion/burst,
 /turf/simulated/shuttle/plating,
-/area/shuttle/mining)
-"coO" = (
-/turf/space,
-/turf/simulated/shuttle/wall{
-	icon_state = "swall_f5";
-	dir = 2
-	},
 /area/shuttle/mining)
 "coP" = (
 /obj/structure/table/glass,
@@ -96700,6 +96668,14 @@
 /obj/effect/decal/warning_stripes/east,
 /turf/simulated/floor/plasteel,
 /area/quartermaster/miningdock)
+"fEC" = (
+/turf/space,
+/turf/simulated/shuttle/wall{
+	dir = 2;
+	icon_state = "swall_f6";
+	tag = "icon-swall_f6"
+	},
+/area/shuttle/mining)
 "gbn" = (
 /obj/structure/disposalpipe/segment,
 /turf/simulated/floor/plasteel{
@@ -96707,6 +96683,10 @@
 	icon_state = "brown"
 	},
 /area/quartermaster/office)
+"giY" = (
+/obj/structure/ore_box,
+/turf/simulated/shuttle/floor,
+/area/shuttle/mining)
 "gjd" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -96877,6 +96857,32 @@
 /obj/structure/lattice,
 /turf/space,
 /area/space/nearstation)
+"kRx" = (
+/obj/machinery/vending/wallmed{
+	name = "Emergency NanoMed";
+	pixel_x = 0;
+	pixel_y = 32;
+	req_access_txt = "0"
+	},
+/obj/item/radio/intercom{
+	dir = 4;
+	name = "station intercom (General)";
+	pixel_x = -28
+	},
+/obj/structure/rack{
+	dir = 1
+	},
+/obj/item/pickaxe{
+	pixel_x = 5
+	},
+/obj/item/stack/sheet/mineral/sandbags{
+	amount = 15
+	},
+/obj/item/shovel{
+	pixel_x = -5
+	},
+/turf/simulated/shuttle/floor,
+/area/shuttle/mining)
 "kYv" = (
 /turf/simulated/floor/plasteel{
 	dir = 1;
@@ -96925,6 +96931,18 @@
 	dir = 4
 	},
 /area/quartermaster/storage)
+"msH" = (
+/obj/machinery/light{
+	dir = 1;
+	on = 1
+	},
+/obj/structure/table,
+/obj/item/storage/firstaid/regular{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/turf/simulated/shuttle/floor,
+/area/shuttle/mining)
 "mtI" = (
 /turf/simulated/floor/plasteel{
 	dir = 2;
@@ -97007,6 +97025,14 @@
 	icon_state = "floor4"
 	},
 /area/shuttle/administration)
+"pyO" = (
+/turf/space,
+/turf/simulated/shuttle/wall{
+	tag = "icon-swall_f5";
+	icon_state = "swall_f5";
+	dir = 2
+	},
+/area/shuttle/mining)
 "pZO" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
 	dir = 10
@@ -97101,6 +97127,28 @@
 /obj/effect/decal/warning_stripes/yellow/hollow,
 /turf/simulated/floor/plasteel,
 /area/quartermaster/storage)
+"sBf" = (
+/obj/machinery/light{
+	dir = 1;
+	on = 1
+	},
+/obj/structure/rack{
+	dir = 1
+	},
+/obj/item/pickaxe{
+	pixel_x = 5
+	},
+/obj/item/stack/sheet/mineral/sandbags{
+	amount = 30
+	},
+/obj/item/shovel{
+	pixel_x = -5
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 30
+	},
+/turf/simulated/shuttle/floor,
+/area/shuttle/mining)
 "sMh" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/rack,
@@ -112087,7 +112135,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+aab
 aaa
 aaa
 aaa
@@ -112344,7 +112392,7 @@ aaa
 aaa
 aaa
 aaa
-aab
+csj
 aaa
 aaa
 aaa
@@ -112601,7 +112649,7 @@ aaa
 aaa
 aaa
 aaa
-csj
+afO
 aaa
 aaa
 aaa
@@ -112855,12 +112903,12 @@ aaa
 aaa
 aaa
 aaa
+aab
 aaa
 aaa
+aab
 aaa
-afO
-aaa
-aaa
+aab
 aaa
 cxX
 aaa
@@ -113113,11 +113161,11 @@ aaa
 aaa
 aaa
 aab
-aaa
-aaa
 aab
+afO
+aMr
 aaa
-aab
+afO
 aaa
 cxY
 aaa
@@ -113370,11 +113418,11 @@ aaa
 aaa
 aaa
 aab
-aab
-afO
-aMr
 aaa
-afO
+aaa
+aMr
+aab
+aab
 aaa
 cxY
 czE
@@ -113626,11 +113674,11 @@ aaa
 aaa
 aaa
 aaa
-aab
+afO
 aaa
-aaa
-aMr
-aab
+afO
+afO
+afO
 aab
 aaa
 cxY
@@ -113883,13 +113931,13 @@ aaa
 aaa
 aaa
 aaa
-afO
-aaa
-afO
+cgQ
+cgQ
+cgQ
+cgQ
 afO
 afO
 aab
-aaa
 cxY
 czF
 cBg
@@ -114140,13 +114188,13 @@ aaa
 aaa
 aaa
 aaa
+cng
+coK
+cqz
 cgQ
+cng
+cng
 cgQ
-cgQ
-cgQ
-afO
-afO
-aab
 cxY
 czF
 cAX
@@ -114398,11 +114446,11 @@ aaa
 aaa
 aaa
 cng
-coK
-cqz
-cgQ
-cng
-cng
+coL
+coL
+cqF
+coL
+cvk
 cgQ
 cxY
 czF
@@ -114654,12 +114702,12 @@ aaa
 aaa
 aaa
 aaa
-cng
+cgQ
+cgQ
+cgQ
+cgQ
 coL
-coL
-cqF
-coL
-cvk
+cvl
 cwx
 cyo
 czP
@@ -114911,12 +114959,12 @@ aaa
 aaa
 aaa
 aaa
-cgQ
-cgQ
-cgQ
+cng
+coK
+cqz
 cgQ
 coL
-cvl
+cvm
 cwx
 cyn
 czH
@@ -115169,11 +115217,11 @@ aaa
 aaa
 aaa
 cng
-coK
-cqz
-cgQ
 coL
-cvm
+coL
+cqF
+coL
+coL
 cwx
 cyb
 czQ
@@ -115425,11 +115473,11 @@ aaa
 aaa
 aaa
 aaa
-cng
-coL
-coL
-cqF
-coL
+cgQ
+cgQ
+cgQ
+cgQ
+ctM
 coL
 cwx
 cyc
@@ -115682,11 +115730,11 @@ aaa
 aaa
 aaa
 aaa
+aaa
+aaa
+aaa
 cgQ
-cgQ
-cgQ
-cgQ
-ctM
+coL
 coL
 cwx
 cyd
@@ -115934,13 +115982,13 @@ bYx
 bxb
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+fEC
+cgF
+ceY
+cgF
+ceY
+cgF
+pyO
 aaa
 cgQ
 ctN
@@ -116191,13 +116239,13 @@ dcY
 bKB
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+ceZ
+kRx
+cim
+cim
+cin
+giY
+ceZ
 aaa
 cgQ
 coL
@@ -116448,13 +116496,13 @@ dcY
 bKB
 aaa
 aaa
-ceX
-cgF
-ceY
-cgF
-ceY
-cgF
-coO
+ceZ
+sBf
+cim
+cim
+cin
+cni
+coN
 aab
 cng
 coL
@@ -116705,10 +116753,10 @@ dcY
 bKB
 aaa
 aaa
-ceZ
-cgB
+ceY
+cgC
+cin
 cim
-cki
 cin
 cnh
 ceZ
@@ -116962,9 +117010,9 @@ dcY
 bKB
 aaa
 aaa
-ceY
-cgC
-cin
+ceZ
+msH
+cim
 cim
 cin
 cni
@@ -117224,7 +117272,7 @@ cgD
 cim
 cim
 cin
-cnj
+giY
 ceZ
 aab
 cgQ
